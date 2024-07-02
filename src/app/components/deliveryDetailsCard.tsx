@@ -23,7 +23,7 @@ export function DeliveryDetailsCard({
   logoSrc,
 }: DeliveryDetailsCardProps) {
   return (
-    <div className="delivery-card p-3 mb-4">
+    <div className="delivery-card">
       <div className="card-title">Delivery Details</div>
       <p className="card-text">Delivery time: {deliveryTime}</p>
       <div className="d-flex align-items-center mb-3 gap-3">
@@ -40,10 +40,10 @@ export function DeliveryDetailsCard({
           <div className="delivery-place">{address}</div>
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex justify-content-start align-items-center gap-5">
         <div>
           <div className="delivery-pickup">Pick-up Code</div>
-          <div className="d-flex align-items-center gap-3">
+          <div className="d-flex align-items-center gap-2">
             <div className="delivery-pickupCode">{pickUpCode}</div>
             <Image
               src="/icons/Copy.png"

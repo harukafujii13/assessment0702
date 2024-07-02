@@ -23,7 +23,7 @@ export function DeliveryCard({
         <div className="delivery-number">Delivery# {deliveryNumber}</div>
         <div className={`${statusClass} rounded-pill`}>{status}</div>
       </div>
-      <div className="ad-space d-flex justify-content-center align-items-center mb-3">
+      <div className="ad-space d-flex justify-content-center align-items-center">
         {adText}
       </div>
     </div>
