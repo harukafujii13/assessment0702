@@ -6,6 +6,7 @@ import { BlueButton } from "./blueButton";
 import { FeatureCard } from "./featureCard";
 import { DeliveryCard } from "./deliveryCard";
 import { DeliveryDetailsCard } from "./deliveryDetailsCard";
+import { StatusBar } from "./statusBar";
 
 const features = [
   {
@@ -25,6 +26,7 @@ export function MainPage() {
   return (
     <div className="main-screen">
       <div className="main-container">
+        <StatusBar />
         <Image
           src="/icons/chevron-left.png"
           width={12}
@@ -48,7 +50,8 @@ export function MainPage() {
           logoSrc={"/icons/Fedex.png"}
         />
         <BlueButton title={"Unlock Compartment"} />
-        <Container>
+        <hr className="my-4" />
+        <div className="w-100 mb-4">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -57,7 +60,7 @@ export function MainPage() {
               description={feature.description}
             />
           ))}
-        </Container>
+        </div>
       </div>
     </div>
   );
