@@ -1,0 +1,156 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "~bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+// Mobile-first styles
+.main-screen{
+  width: 390px;
+  margin: 0 auto;
+
+  // Tablet styles
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 700px; 
+    margin: 0 auto;
+  }
+}
+
+.main-container{
+  padding: 16px;
+}
+
+.chevron-left{
+  width: 32px;
+  height: 32px;
+}
+
+// DeliveryCard
+.delivery-number{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.status-badge {
+  background-color: rgba(234, 84, 85, 0.15); 
+  color: #ea5455; 
+  padding: 3px 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ad-space {
+  background-color: #EDF2F7;
+  border-radius: 8px;
+  height: 123px; 
+  width: 100%;
+  color: #A8BACC;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+
+//BlueButton
+.bule-button {
+  width: 358px;
+  height: 123px;
+  padding: 15px 103px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+// FeatureCard
+.card {
+  width: 358px;
+  height: 80px;
+  border: 1px solid #f5f5f5;
+  margin-top: 1rem;
+}
+
+.card-icon{
+  height: 24px;
+  width: 24px;
+}
+
+.card-description{
+  width: 231.29px;
+  height: 50px;
+}
+
+.card-title{
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.card-text{
+  font-weight: 400;
+  font-size: 12px;
+  color: #9397A5;
+}
+
+//DeliveryDetailsCard
+
+.card-title{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.delivery-logo{
+  width: 64px;
+  height: 64px;
+}
+
+.delivery-form{
+  font-family: 500;
+  font-size: 14px;
+}
+
+.delivery-place{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.delivery-pickup{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.delivery-pickupCode{
+  font-weight: 700;
+  font-size: 20px;
+  color: #4D81E7;
+}
+
+
+
+
+
+
+
