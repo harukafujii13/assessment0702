@@ -39,7 +39,7 @@ export function MainPage() {
           status="Pending"
           adText="Ad Space"
         />
-        <hr className="my-4" />
+        <hr className="my-4 custom" />
         <DeliveryDetailsCard
           deliveryTime="2023-10-17 17:05:54"
           deliveryFrom="Delivery from Fedex"
@@ -50,8 +50,8 @@ export function MainPage() {
           logoSrc={"/icons/Fedex.png"}
         />
         <BlueButton title={"Unlock Compartment"} />
-        <hr className="my-4" />
-        <div className="w-100 mb-4">
+        <hr className="my-4 custom" />
+        <div className="mb-4">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
